@@ -17,3 +17,17 @@ export const weatherClassification = (weather: "Clear"|"Clouds"|"Mist"|"Rain"|"S
 
   return imagens[weather] ? imagens[weather] : imagens['Clouds']
 };
+
+export const translateWeater = (weather: "Clear"|"Clouds"|"Mist"|"Rain"|"Snow") =>{
+
+  const traducoes = {
+    Clear: "Claro",
+    Clouds: "Nublado",
+    Mist: "Nevoeiro",
+    Rain: "Chuvoso",
+    Snow: "Nevando",
+  };
+
+  return traducoes[weather] ? traducoes[weather] : "Não Informado";
+
+} 
